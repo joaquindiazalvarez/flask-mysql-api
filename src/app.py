@@ -5,7 +5,7 @@ from config import config
 
 app = Flask(__name__)
 
-
+conexion = MySQL(app)
 
 @app.route('/')
 def listar_cursos():
